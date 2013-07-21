@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="580c14eb-9799-4d31-8b14-c2a78931de89" version="37">
+  <Properties>
+    <Name>R.E.D. WWII Edition</Name>
+    <Stability>Beta</Stability>
+    <Teaser>R.E.D. WWII Edition</Teaser>
+    <Description>R.E.D. WWII Edition is a total conversion wargame mod based on the Civ5 game engine.[NEWLINE]Features :[NEWLINE][ICON_BULLET]Frontline: units can capture tiles (or liberate your allied/friends tiles)[NEWLINE][ICON_BULLET]Supply lines: units that are not connected to a city won't get reinforcement and a malus in combat[NEWLINE][ICON_BULLET]Reinforcements: personnel and materiel are needed to "heal" your units.[NEWLINE][ICON_BULLET]National units: each great power have it's own set of units models[NEWLINE][NEWLINE][COLOR_RED]The[/COLOR] [COLOR_YELLOW]R.E.D. WWII Data Files (V.4)[/COLOR][COLOR_RED] mod must be activated to play this mod[/COLOR]</Description>
+    <Authors>Gedemon</Authors>
+    <SpecialThanks>danrell, T_KCommanderbly, FouR_Pharao, JanBoruta, Whys, whoward69, Hulfgar, Putmalk, NiRv4n4, pap1723, csebal, Hulfgar, Putmalk, smellymummy, NwabudikeMorgan, rhettrongun, Mylon, Redox, PAVLOS_GR300</SpecialThanks>
+    <HideSetupGame>1</HideSetupGame>
+    <Homepage>http://forums.civfanatics.com/showthread.php?t=431344</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>35</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+    <Custom_Background_TXT_KEY_RED_EURO1940_SCENARIO_TITLE>Art/ww2europe1940.dds</Custom_Background_TXT_KEY_RED_EURO1940_SCENARIO_TITLE>
+    <Custom_Background_TXT_KEY_RED_EARTH1942_SCENARIO_TITLE>Art/ww21942startscreen.dds</Custom_Background_TXT_KEY_RED_EARTH1942_SCENARIO_TITLE>
+    <Custom_Background_TXT_KEY_RED_AMERICAEURO1936_SCENARIO_TITLE>Art/1936startscreen.dds</Custom_Background_TXT_KEY_RED_AMERICAEURO1936_SCENARIO_TITLE>
+    <Custom_Background_TXT_KEY_RED_STALINGRAD_SCENARIO_TITLE>Art/StalingradMap.dds</Custom_Background_TXT_KEY_RED_STALINGRAD_SCENARIO_TITLE>
+    <DisableLoadGameOption>1</DisableLoadGameOption>
+    <Custom_Background_TXT_KEY_RED_EARTH1936_SCENARIO_TITLE>Art/Earth1936startscreen.dds</Custom_Background_TXT_KEY_RED_EARTH1936_SCENARIO_TITLE>
+  </Properties>
+  <Dependencies />
+  <References>
+    <Mod id="544d699d-1c84-4606-b22f-a1b009af9471" minversion="3" maxversion="999" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="1A80CE0E3A162DBAFDC0BC830C84662E" import="0">1936_Earth.Civ5Map</File>
+    <File md5="B252ADE8C37A6D6EA43E6564D821182D" import="1">Art/1936startscreen.dds</File>
+    <File md5="C7D16D2649D831FF8118B09DB45B1610" import="1">Art/Earth1936startscreen.dds</File>
+    <File md5="C9410E1352442C37C0ABB03D357CB4C0" import="1">Art/FontIcons/RED_WWII_FontIcons.ggxml</File>
+    <File md5="2A82D09A8377EC7A01FDAF3E172D0C99" import="1">Art/FontIcons/RED_WWII_FontIcons.dds</File>
+    <File md5="72C5E4B6C9625A8667944E57DAEF2511" import="1">Art/Maps/mapItaly.dds</File>
+    <File md5="EC8E2D8BC7F5164EF9705E889BFA0C45" import="1">Art/Maps/mapGermany.dds</File>
+    <File md5="01C020CD99FA5729D91A4B1D33AF1A57" import="1">Art/Maps/mapUSSR.dds</File>
+    <File md5="1D40149D6B2E906B88E6F2874A5C1C8C" import="1">Art/Maps/mapUSA.dds</File>
+    <File md5="4C2EFEB57D028BB477996F966D5FD893" import="1">Art/special.dds</File>
+    <File md5="71303C59C3F4A2E027E84E8916D036B7" import="1">Art/StalingradMap.dds</File>
+    <File md5="6BAC96F31BCD4703F853382C6337A635" import="1">Art/SV_icons/SV_Blank.dds</File>
+    <File md5="0AF1040B0651C12E3F7850B9492D41D8" import="1">Art/SV_icons/SV_Infantry.dds</File>
+    <File md5="DD9F4125A0C5C3C5AC85E440BDC3F2A8" import="1">Art/Temp/_RED_WWII_Logo.dds</File>
+    <File md5="A06B1AC85B13132429FB0FD45E1ED102" import="1">Art/ww21942startscreen.dds</File>
+    <File md5="DD55B73D95A3B136E70D33DA3C7B4F06" import="1">Art/ww2europe1940.dds</File>
+    <File md5="87C1B1849F2F9AD6FB00BEFD97AE6682" import="1">CvGameCore_Expansion1.dll</File>
+    <File md5="87C1B1849F2F9AD6FB00BEFD97AE6682" import="1">CvGameCore_Expansion2.dll</File>
+    <File md5="87C1B1849F2F9AD6FB00BEFD97AE6682" import="1">CvGameCoreDLLFinal Release.dll</File>
+    <File md5="9B3ED737041AAC696CDCC9BD34C9EC97" import="0">Europe_1937.Civ5Map</File>
+    <File md5="FDD41887635CB085F9E8506279131F58" import="0">Europe_1939.Civ5Map</File>
+    <File md5="083C15406F18933986572C89F4C3A4E3" import="0">Europe_1939_small.Civ5Map</File>
+    <File md5="88902E5ED2E16428B2783EE10541E28E" import="0">Europe_1939_standard.Civ5Map</File>
+    <File md5="310EAF9504B081088C653E927D9E5835" import="0">GameSetup/Earth1936Setup.lua</File>
+    <File md5="522A7A6FBD4C7E465EE6FEE02643E759" import="0">GameSetup/Earth1936Setup.xml</File>
+    <File md5="238E68392CAAB435750F4D74FE867134" import="0">GameSetup/RedSmallEuro1940Setup.lua</File>
+    <File md5="522A7A6FBD4C7E465EE6FEE02643E759" import="0">GameSetup/RedSmallEuro1940Setup.xml</File>
+    <File md5="1D7456FA445F91CDA5825E102BB8AEA6" import="0">GameSetup/StalingradSetup.lua</File>
+    <File md5="522A7A6FBD4C7E465EE6FEE02643E759" import="0">GameSetup/StalingradSetup.xml</File>
+    <File md5="D34BA72A66C82F84FBD857ABD656990B" import="1">Lua/Earth1936/DefinesEarth1936.lua</File>
+    <File md5="E933C39E7EE47E1701C34643CA784E94" import="1">Lua/Earth1936/RedEarth1936.lua</File>
+    <File md5="3B9372CCC96C0A0BEF51C9EB313B503D" import="1">Lua/Earth1936/ScriptEarth1936.lua</File>
+    <File md5="714797D78DE69907D7EBA53DBA81C3BC" import="1">Lua/PlotIterators.lua</File>
+    <File md5="796503A3FCDE1565D35F8FF31E3A6BD0" import="1">Lua/RedUnitUtils.lua</File>
+    <File md5="4ED4572E99EEF59246E260B233C03983" import="1">Lua/RedAI_Air.lua</File>
+    <File md5="0BEA7B19BFC626B05B5CB9C84D41AA28" import="1">Lua/RedDefinesProjects.lua</File>
+    <File md5="483C5A7220E0D54722C61F68872C6EAA" import="1">Lua/RedDefinesClasses.lua</File>
+    <File md5="A759942C5647BE8DFFF7319F6268FBBF" import="1">Lua/RedDefinesUnits.lua</File>
+    <File md5="B10A900C3CD8DFCF9826BFF3522144F5" import="1">Lua/SmallEurope1940/DefinesSmallEuro1940.lua</File>
+    <File md5="892601298512325CDEAC709C73725636" import="1">Lua/SmallEurope1940/RedSmallEuro1940.lua</File>
+    <File md5="356E007F6DBA656501361A21F6248703" import="1">Lua/SmallEurope1940/ScriptSmallEuro1940.lua</File>
+    <File md5="40463CFD40AC5724B228BD477FB8AE89" import="1">Lua/Stalingrad/DefinesStalingrad.lua</File>
+    <File md5="27760E0327EFB45D0D71C14D4B125C49" import="1">Lua/Stalingrad/RedStalingrad.lua</File>
+    <File md5="45EB9F22BFEF06A4CF0257BF466A72BC" import="1">Lua/Stalingrad/ScriptStalingrad.lua</File>
+    <File md5="686066385AFC96076D9D68084DD5AD00" import="0">GameSetup/Earth1941Setup.lua</File>
+    <File md5="ED577CF4FDF9DA1D9FD754105439806B" import="0">GameSetup/Earth1941Setup.xml</File>
+    <File md5="7C287C1035D01D16AECBEA7A38160C73" import="0">GameSetup/RedAmericaEuro1936Setup.lua</File>
+    <File md5="38679B8D862D435EC74867E4838F2946" import="0">GameSetup/RedAmericaEuro1936Setup.xml</File>
+    <File md5="29BCB4D73A2E9C4AE2FDE127769AD888" import="0">GameSetup/RedEuro1940Setup.lua</File>
+    <File md5="522A7A6FBD4C7E465EE6FEE02643E759" import="0">GameSetup/RedEuro1940Setup.xml</File>
+    <File md5="68FE4A5A9259B693F4FE33D6F6DD9BFB" import="1">Lua/AmericaEuro1936/DefinesAmericaEuro1936.lua</File>
+    <File md5="8FBE9EF9D83BA4726D90843E9E71C306" import="1">Lua/AmericaEuro1936/RedAmericaEuro1936.lua</File>
+    <File md5="05A0D8C0E15ACBEE183C2D103FB6B6B9" import="1">Lua/AmericaEuro1936/ScriptAmericaEuro1936.lua</File>
+    <File md5="706F51BA570B7C83FF5B20B49BB346FD" import="1">Lua/Cseb/csbmod_Common_PlotHelpers.lua</File>
+    <File md5="609CCA421316E44EDC278E2830978D37" import="1">Lua/Cseb/csbmod_extplotinfo_Common.lua</File>
+    <File md5="1035E422B5A7EA588720D570F862E4E5" import="1">Lua/Cseb/csbmod_extplotinfo_PlotHelp.lua</File>
+    <File md5="F9963BAE223971040F7E5A60FC77087C" import="1">Lua/Cseb/csbmod_extplotinfo_PlotPopup.lua</File>
+    <File md5="B3445F9567FA1ADC1B2D6E6058CC2039" import="1">Lua/Earth1942/DefinesEarth1942.lua</File>
+    <File md5="29CE60AD6DE4E38CBAA3C6F62382C612" import="1">Lua/Earth1942/RedEarth1942.lua</File>
+    <File md5="E9BF1D520A8253B2951EA217803E0EF8" import="1">Lua/Earth1942/ScriptEarth1942.lua</File>
+    <File md5="FC4F82320FC2EA30477210F9D07CC5B8" import="1">Lua/Europe1940/DefinesEuro1940.lua</File>
+    <File md5="182875FB8AE2C3256594170EF7337208" import="1">Lua/Europe1940/RedEuro1940.lua</File>
+    <File md5="444D6961432CA1B1FC69D5D242837DE7" import="1">Lua/Europe1940/ScriptEuro1940.lua</File>
+    <File md5="7719FE0D92F7FEC5575FC054F1E19911" import="1">Lua/FlagPromotions/ModUserData.lua</File>
+    <File md5="013788403FE8D21D92426F04A198BFC8" import="1">Lua/FlagPromotions/UnitFlagManager_addin.lua</File>
+    <File md5="162F13C550FAF382C624ECB30BC8FCBE" import="1">Lua/RedAI_Global.lua</File>
+    <File md5="00A18AB423292D17F3A251CE7EAFB046" import="1">Lua/RedCombat.lua</File>
+    <File md5="4319F59E4E625344C84DFAAB60F07D18" import="1">Lua/RedDebug.lua</File>
+    <File md5="DC858D9CC6B2F1C7202E4CA7FBEB14DA" import="1">Lua/RedDefinesGlobal.lua</File>
+    <File md5="63F759F58068698885BF72DDC758E42B" import="1">Lua/RedDiplomacy.lua</File>
+    <File md5="66007829078751D45C377E0BCBD09218" import="1">Lua/RedFunctions.lua</File>
+    <File md5="018DDAF078F863A8D887EFC426731DE5" import="0">Lua/RedMain.lua</File>
+    <File md5="0A6340AD3768D4A61B31A99F6B8B0D00" import="1">Lua/RedOverrideInclude.lua</File>
+    <File md5="4F495C78C43FBF4BC87121556DF1417A" import="1">Lua/RedReinforcements.lua</File>
+    <File md5="4CE7B039193360A4160789A444E6AE58" import="1">Lua/RedDefinesRules.lua</File>
+    <File md5="720DFAE86AC0E7F398E18739DB650C84" import="1">Lua/RedScenarioDefine.lua</File>
+    <File md5="9D73977A9B3A2DFB95B60102C347CDD3" import="1">Lua/RedSupplyRoutes.lua</File>
+    <File md5="EBD8FD563F11AF6E88B3BA43CAFEB3CB" import="1">Lua/RedUnitFunctions.lua</File>
+    <File md5="73765D84B7BB2B5190DEBA5719387FB5" import="1">Lua/RedUtils.lua</File>
+    <File md5="B3E7CA15368634E0F8C11D4111828CF9" import="1">Lua/RouteConnections.lua</File>
+    <File md5="761DFFE4309CC6660D2264F46B67E733" import="1">Lua/SaveUtils.lua</File>
+    <File md5="4C209E1FBBF9C0FF8228FB4061EEAC67" import="0">Lua/ShareData.lua</File>
+    <File md5="052844AC0737CFE1282669BCB1BBFCE9" import="0">Lua/TopPanel_Clock.lua</File>
+    <File md5="1B2DF5DC61698C8D7F18D9B76500B1DE" import="1">Override/UI/CityBannerManager.lua</File>
+    <File md5="47F7093DDCAF4C3167A7B7253D4DCD6A" import="1">Override/UI/CityBannerManager.xml</File>
+    <File md5="58ECA6EB6631B546E9F39AACC987D34D" import="1">Override/UI/CityView.lua</File>
+    <File md5="08BBEA70FCB67D6274C7600F0CDB4821" import="1">Override/UI/CityView.xml</File>
+    <File md5="926C4891C7708AA17B4E32A3BCD76591" import="1">Override/UI/CityView_small.xml</File>
+    <File md5="5F9E1A5CC5C901D2D3511D410CB8428E" import="1">Override/UI/EndGameMenu.lua</File>
+    <File md5="81D7746B67E43D93CE59E7DB7A7D7349" import="1">Override/UI/GameMenu.lua</File>
+    <File md5="6831C89C3E830752319E19E241832A94" import="1">Override/UI/GameMenu.xml</File>
+    <File md5="56777F0AC280AE06B0168B610BC514BA" import="1">Override/UI/InfoTooltipInclude.lua</File>
+    <File md5="D714313AE95EB0726B1D872B3397B361" import="1">Override/UI/LoadScreen.lua</File>
+    <File md5="9FB861BF496CFB7A6A572A8AE73F1DFC" import="1">Override/UI/ModsMenu.lua</File>
+    <File md5="D1DC5AB59C5C7E2F27F7629C219D6163" import="1">Override/UI/ModsMenu.xml</File>
+    <File md5="D0230C525DC2087682F585793FF5B917" import="1">Override/UI/MPList.lua</File>
+    <File md5="A4AB464D8F15EDE2335B38D1402B6F7F" import="1">Override/UI/NewTurn.lua</File>
+    <File md5="662C94008078E36939E1BB62DEFB2A93" import="1">Override/UI/NotificationPanel.lua</File>
+    <File md5="7D72EE8B9C901594B43487C87916715B" import="0">Override/UI/OptionsMenu.lua</File>
+    <File md5="2EEB461987AF1D1C1EFF46B7EC42F253" import="1">Override/UI/PlotHelpManager.lua</File>
+    <File md5="308BE323E5E4865A5F1A83D7A93AEBDE" import="1">Override/UI/PlotHelpText.lua</File>
+    <File md5="69CCC5C752D4528171C2DDB578BC8A55" import="1">Override/UI/ProductionPopup.lua</File>
+    <File md5="522B404B689164CD3EE9299BFACD0CEA" import="1">Override/UI/ProductionPopup.xml</File>
+    <File md5="021A229B3FD7035D62B839A96DB76C6B" import="1">Override/UI/TopPanel.lua</File>
+    <File md5="45AAB409F2116E2C04AFAB6511DB9ECE" import="1">Override/UI/TopPanel.xml</File>
+    <File md5="2EEA6BE5C7BF9AFD828032823E111ED0" import="1">Override/UI/TradeLogic.lua</File>
+    <File md5="5594F6C7C8F86C7595C47B1CA2F90E7D" import="1">Override/UI/Tutorial.lua</File>
+    <File md5="E528F981EFE25D4A8C8888A3B23BE844" import="1">Override/UI/UnitFlagManager.lua</File>
+    <File md5="589DAF27B3BDCEA8C8074ED6E29129DB" import="1">Override/UI/UnitFlagManager.xml</File>
+    <File md5="BE529A52FB316F63E440E93E284265CC" import="1">Override/UI/UnitPanel.lua</File>
+    <File md5="D7C7AD422CEA2A824621B61EFE373CDD" import="1">Override/Vanilla/Civilopedia/CivilopediaScreen.lua</File>
+    <File md5="6C821530D9F02C03EAF45F8F005EA42E" import="1">Override/Vanilla/Civilopedia/CivilopediaScreen.xml</File>
+    <File md5="D9784DAF99182EB9CD2A193E16025F80" import="1">Override/Vanilla/InGame/ActionInfoPanel.lua</File>
+    <File md5="DDF7704D85ED8EEEEFD6AE01B78DE3A9" import="1">Override/Vanilla/InGame/ActionInfoPanel.xml</File>
+    <File md5="3604CFDA51FB00EEDA9F0CE1BCEA31FB" import="1">Override/Vanilla/InGame/AdvisorCounselPopup.lua</File>
+    <File md5="31A6A484F0D62BAA4E35C995DA34B3BB" import="1">Override/Vanilla/InGame/AdvisorCounselPopup.xml</File>
+    <File md5="587445ED8B4934C221DDA2416586D605" import="1">Override/Vanilla/InGame/AdvisorInfoPopup.lua</File>
+    <File md5="7A09F5D2812850F7810DC0766C544C8C" import="1">Override/Vanilla/InGame/AdvisorInfoPopup.xml</File>
+    <File md5="1DF6746F6BF57A42BE821413D9724251" import="1">Override/Vanilla/InGame/AdvisorModal.lua</File>
+    <File md5="8FE1437A1AC9FD1F7FDCAF98D5365266" import="1">Override/Vanilla/InGame/AdvisorModal.xml</File>
+    <File md5="E4D72193B1C543FD6F7920289D214C21" import="1">Override/Vanilla/InGame/Advisors.lua</File>
+    <File md5="3CD7E14E8407C26915DE8A815E253801" import="1">Override/Vanilla/InGame/Advisors.xml</File>
+    <File md5="DF36252C33630143A5B128A459886F8F" import="1">Override/Vanilla/InGame/AnnexCityPopup.lua</File>
+    <File md5="85C02896778B1D75AC056E3D2757ED86" import="1">Override/Vanilla/InGame/BarbarianCampPopup.lua</File>
+    <File md5="5CF2FFD1FF0B8439671B99E554850115" import="1">Override/Vanilla/InGame/BarbarianCampPopup.xml</File>
+    <File md5="1CE94A22FA5C6F2C70A26C915D167FEF" import="1">Override/Vanilla/InGame/BarbarianRansomPopup.lua</File>
+    <File md5="B90AEDCC5ADFF55BA6CF5612981CE299" import="1">Override/Vanilla/InGame/Bombardment.lua</File>
+    <File md5="78ECF72E190C6E3ED406981A49E130B6" import="1">Override/Vanilla/InGame/ChangePassword.lua</File>
+    <File md5="5417ED7A3DE383BF402F01CC0559B1C2" import="1">Override/Vanilla/InGame/ChangePassword.xml</File>
+    <File md5="F1E46F3072789A49E206A411772E0CF8" import="1">Override/Vanilla/InGame/ChooseFreeItem.lua</File>
+    <File md5="7D617857DD9E9BD280A7530F8974289D" import="1">Override/Vanilla/InGame/ChooseFreeItem.xml</File>
+    <File md5="1D3592DE7604E3E3E7EE6244D5D4452A" import="1">Override/Vanilla/InGame/CityList.lua</File>
+    <File md5="B661207E3CC23B0730637E4BBF416506" import="1">Override/Vanilla/InGame/CityList.xml</File>
+    <File md5="1588E2B8908A5CCDBDFD8E98A5A7A95B" import="1">Override/Vanilla/InGame/CityPlotManagementPopup.lua</File>
+    <File md5="A9695D81DE2F9181BB0EBA344BB4F6AC" import="1">Override/Vanilla/InGame/CityStateDiploPopup.lua</File>
+    <File md5="5F1D3DD2CF3E65C5E97A1F8B66F6653B" import="1">Override/Vanilla/InGame/CityStateDiploPopup.xml</File>
+    <File md5="4A887DE8E9EA12FEB3D1435DAB5EB5F8" import="1">Override/Vanilla/InGame/CityStateGreetingPopup.lua</File>
+    <File md5="0C46179AC450C38BAE355EDABE94E82F" import="1">Override/Vanilla/InGame/CityStateGreetingPopup.xml</File>
+    <File md5="00E429A1E37E58EC57020140341778BA" import="1">Override/Vanilla/InGame/CityStateGreetingPopupOpenCenter.xml</File>
+    <File md5="3FE9AAC779B8FB662984965A0EAF59D4" import="1">Override/Vanilla/InGame/ColorKey.lua</File>
+    <File md5="3488AD81F200654DD0522FB7FCE9EA92" import="1">Override/Vanilla/InGame/ColorKey.xml</File>
+    <File md5="3CC851067B119C395E2818B24EFA9D4C" import="1">Override/Vanilla/InGame/ConfirmCityTaskPopup.lua</File>
+    <File md5="136E2B52AA638B2509B00DA5C739E2E5" import="1">Override/Vanilla/InGame/ConfirmCommandPopup.lua</File>
+    <File md5="455FBE760A319C862BBCC2B373C4668A" import="1">Override/Vanilla/InGame/ConfirmGiftPopup.lua</File>
+    <File md5="A82FC4B78C525CB736FC4EC583666C43" import="1">Override/Vanilla/InGame/ConfirmImprovementRebuildPopup.lua</File>
+    <File md5="549B9D1FCF8CADC49FE8A0C3DC00C908" import="1">Override/Vanilla/InGame/ConfirmPolicyBranchPopup.lua</File>
+    <File md5="EEFF9CD2C5A0071C7351D36D500B64B3" import="1">Override/Vanilla/InGame/DebugMenu.lua</File>
+    <File md5="A2C58B9BD747526DDEE65379889CBFAA" import="1">Override/Vanilla/InGame/DebugMenu.xml</File>
+    <File md5="7FA88E91600E0BB4FCE1BCB4D284717F" import="1">Override/Vanilla/InGame/DebugMode.lua</File>
+    <File md5="A293A001213405FEB9F920CFFF05B97E" import="1">Override/Vanilla/InGame/DebugMode.xml</File>
+    <File md5="8FE442D90081693E05000CDD59086B67" import="1">Override/Vanilla/InGame/DeclareWarMovePopup.lua</File>
+    <File md5="153AF3FA15FBC683942F0F8D7BB22275" import="1">Override/Vanilla/InGame/DeclareWarRangeStrikePopup.lua</File>
+    <File md5="E1DE076FC5F14B8C3C1F8BF30ADEFFC6" import="1">Override/Vanilla/InGame/Demographics.lua</File>
+    <File md5="C10D7AF2CB7110C1AE77363861FF641F" import="1">Override/Vanilla/InGame/Demographics.xml</File>
+    <File md5="A932B56094FDE95A5378ABE32CE6657F" import="1">Override/Vanilla/InGame/DiploCorner.lua</File>
+    <File md5="2ABA9F5D89089DEBB4ADB6C7243F6722" import="1">Override/Vanilla/InGame/DiploCorner.xml</File>
+    <File md5="6DDF10936BD421EEC1F466667AF4BBFB" import="1">Override/Vanilla/InGame/DiploCurrentDeals.lua</File>
+    <File md5="D3E8B9240623350E96E658A755C388D7" import="1">Override/Vanilla/InGame/DiploCurrentDeals.xml</File>
+    <File md5="C0C81B32DF136736874C5999405C724A" import="1">Override/Vanilla/InGame/DiploGlobalRelationships.lua</File>
+    <File md5="6A01F8696ED212BDD8D13D14A06F6DDB" import="1">Override/Vanilla/InGame/DiploGlobalRelationships.xml</File>
+    <File md5="85FD3F7D70F6CA46AE4B73A013E97362" import="1">Override/Vanilla/InGame/DiploList.lua</File>
+    <File md5="3F5CAA84DE30CDB2CE8C21FC4BBF05ED" import="1">Override/Vanilla/InGame/DiploList.xml</File>
+    <File md5="E1B6AD307DEBEB37C3036B01F7FD8A8E" import="1">Override/Vanilla/InGame/DiploOverview.lua</File>
+    <File md5="B8797C1E954A9BB5FABEBCAE4A1656DF" import="1">Override/Vanilla/InGame/DiploOverview.xml</File>
+    <File md5="E9852228F6777E48CCCBC809F626E34A" import="1">Override/Vanilla/InGame/DiploRelationships.lua</File>
+    <File md5="65D6B5AB2841D75CF8CC576A42F5E273" import="1">Override/Vanilla/InGame/DiploRelationships.xml</File>
+    <File md5="A9B9FE8BEB90B4C6C5F0B0572C4C9122" import="1">Override/Vanilla/InGame/DiploTrade.lua</File>
+    <File md5="F769CE1FA8762C01C86C6D1CFF81CD9C" import="1">Override/Vanilla/InGame/DiploTrade.xml</File>
+    <File md5="5513E8D1B49C1144CFDA2453BC2A7480" import="1">Override/Vanilla/InGame/DiploVotePopup.lua</File>
+    <File md5="C6DBEE8832828540F552BCBB64A59140" import="1">Override/Vanilla/InGame/DiploVotePopup.xml</File>
+    <File md5="28AA663FB2E8318B1F5D21F55C2431FF" import="1">Override/Vanilla/InGame/DiscussionDialog.lua</File>
+    <File md5="B8A61CBDB6B125CD259D734196D75BFA" import="1">Override/Vanilla/InGame/DiscussionDialog.xml</File>
+    <File md5="494E15CF7664BBE68B174CE637E1AD03" import="1">Override/Vanilla/InGame/DiscussLeader.lua</File>
+    <File md5="216ECC73629C411C3CDEBD2726B38CEE" import="1">Override/Vanilla/InGame/DiscussLeader.xml</File>
+    <File md5="13E928F8795BF1B9313027A58B8E3741" import="1">Override/Vanilla/InGame/EconomicGeneralInfo.lua</File>
+    <File md5="340168630A5C158CE4C268D8D28F1AC0" import="1">Override/Vanilla/InGame/EconomicGeneralInfo.xml</File>
+    <File md5="9D3519174C4647BE1B438E4A12EC0076" import="1">Override/Vanilla/InGame/EconomicOverview.lua</File>
+    <File md5="974CCC4576302D4290000AF6238C7A84" import="1">Override/Vanilla/InGame/EconomicOverview.xml</File>
+    <File md5="5FBF89E9624E87F46AA7581CE51B096B" import="1">Override/Vanilla/InGame/EmptyPopup.lua</File>
+    <File md5="BBC525FB8B894B199D42FC93D6C8899F" import="1">Override/Vanilla/InGame/EmptyPopup.xml</File>
+    <File md5="0826445779D4AAB05FA212128AD7F4D4" import="1">Override/Vanilla/InGame/EndGameMenu.xml</File>
+    <File md5="46F48158F80B9FC9273C0143729756F2" import="1">Override/Vanilla/InGame/EndGameReplay.lua</File>
+    <File md5="D3B2E29F1B1221858E5D1C8B790D9484" import="1">Override/Vanilla/InGame/EndGameReplay.xml</File>
+    <File md5="963E1C7A6840D7098E0DBBF9D418250B" import="1">Override/Vanilla/InGame/EnemyUnitPanel.lua</File>
+    <File md5="B3817382F5432236CA4946813DB6D165" import="1">Override/Vanilla/InGame/EnemyUnitPanel.xml</File>
+    <File md5="93A7EE97E20618D3BAC227A888E55B1C" import="1">Override/Vanilla/InGame/EnemyUnitPanel_small.xml</File>
+    <File md5="5FBF89E9624E87F46AA7581CE51B096B" import="1">Override/Vanilla/InGame/FluidFOW.lua</File>
+    <File md5="90963FC29716E66AD6DA2F0F4E565241" import="1">Override/Vanilla/InGame/FluidFOW.xml</File>
+    <File md5="FC840D2AA8DC2A3F3DC90ECA6482A022" import="1">Override/Vanilla/InGame/GenericPopup.lua</File>
+    <File md5="F3B2628D243375078EFC4D3F9FF3E3E0" import="1">Override/Vanilla/InGame/GenericPopup.xml</File>
+    <File md5="B6A6EC94AF97D7F3863DE672CFB7595F" import="1">Override/Vanilla/InGame/GenericWorldAnchor.lua</File>
+    <File md5="0D9A389502D633EDFBEAAF95E83CE036" import="1">Override/Vanilla/InGame/GenericWorldAnchor.xml</File>
+    <File md5="FCB944D0174F9C734FEE58F9156911E5" import="1">Override/Vanilla/InGame/GoldenAgePopup.lua</File>
+    <File md5="039AEB7ADF2EAFED78A3519F9A4F4478" import="1">Override/Vanilla/InGame/GoldenAgePopup.xml</File>
+    <File md5="24B15E76C12DBE86EE3D8DB09146C5BE" import="1">Override/Vanilla/InGame/GoodyHutPopup.lua</File>
+    <File md5="B444C393823CDE6CE776CCFDFB3DB376" import="1">Override/Vanilla/InGame/GoodyHutPopup.xml</File>
+    <File md5="68858FF2D352D65C87A314786696A009" import="1">Override/Vanilla/InGame/GPList.lua</File>
+    <File md5="477D58A6D2694AFD7030EBC1E6CDF0D1" import="1">Override/Vanilla/InGame/GPList.xml</File>
+    <File md5="6CDF19A5A2D733ECE976EC5CA73DBC96" import="1">Override/Vanilla/InGame/GraphicsPanel.lua</File>
+    <File md5="7AAF12A1A79AF965CC46575EAF5BAE78" import="1">Override/Vanilla/InGame/GraphicsPanel.xml</File>
+    <File md5="3F0A7389A2DD9BFFB3C48EA6373942B5" import="1">Override/Vanilla/InGame/GreatPersonRewardPopup.lua</File>
+    <File md5="E98E3FB22423B764988F6FF847F6EBCE" import="1">Override/Vanilla/InGame/GreatPersonRewardPopup.xml</File>
+    <File md5="49D3DF27478FDC1CCB682E2A5DFA4BB7" import="1">Override/Vanilla/InGame/HallOfFame.lua</File>
+    <File md5="D6CC2D87EEB585BB34F9BD4010013093" import="1">Override/Vanilla/InGame/HallOfFame.xml</File>
+    <File md5="AA9CDC0A9A601D0BC4BCB24215B17C0B" import="1">Override/Vanilla/InGame/HappinessInfo.lua</File>
+    <File md5="90114D5CA487797342FB19C0E536A896" import="1">Override/Vanilla/InGame/HappinessInfo.xml</File>
+    <File md5="6CDF19A5A2D733ECE976EC5CA73DBC96" import="1">Override/Vanilla/InGame/HexDebugTextPanel.lua</File>
+    <File md5="A1D94237C07F4C071EE9AB7F6954856D" import="1">Override/Vanilla/InGame/HexDebugTextPanel.xml</File>
+    <File md5="F1BBB2B4200680AB0E60D8B60ECA6574" import="1">Override/Vanilla/InGame/InfoCorner.lua</File>
+    <File md5="3609130DE1B2C5E196F5FFF2B56C2DC3" import="1">Override/Vanilla/InGame/InfoCorner.xml</File>
+    <File md5="22B5E0F94D438C68705F50E74FD991AE" import="1">Override/Vanilla/InGame/InGame.lua</File>
+    <File md5="4C97FE7AA9649B6A2294680696A71EAA" import="1">Override/Vanilla/InGame/InGame.xml</File>
+    <File md5="409ED9785FC91FCFDDACF26237ACA578" import="1">Override/Vanilla/InGame/LeaderHeadRoot.lua</File>
+    <File md5="67757EA007F02746FB9B4D6498365320" import="1">Override/Vanilla/InGame/LeaderHeadRoot.xml</File>
+    <File md5="63F7A9AFFDC9804C61DBEB807C362F9C" import="1">Override/Vanilla/InGame/LiberateMinorPopup.lua</File>
+    <File md5="9BF932308AC766183EE697D74209E455" import="1">Override/Vanilla/InGame/MilitaryOverview.lua</File>
+    <File md5="AB682447ADEC20739C398A15EF497C31" import="1">Override/Vanilla/InGame/MilitaryOverview.xml</File>
+    <File md5="313C1DA8B8B012E2D926E1735633086C" import="1">Override/Vanilla/InGame/MiniMapPanel.lua</File>
+    <File md5="F7444D2B1BA860DAC9616BDBD3E25569" import="1">Override/Vanilla/InGame/MiniMapPanel.xml</File>
+    <File md5="FD7FD2103CB85DF9507E1719F6630F86" import="1">Override/Vanilla/InGame/MinorCivEnterTerritoryPopup.lua</File>
+    <File md5="5E5C7CD6D54C4DDA5CD9029F5605DC4A" import="1">Override/Vanilla/InGame/MinorCivGoldPopup.lua</File>
+    <File md5="ADD1AD563FAB054C70A5BDD6D972750F" import="1">Override/Vanilla/InGame/MPList.xml</File>
+    <File md5="F2B1FD341A5B9269AFD9B14A24C265F8" import="1">Override/Vanilla/InGame/NaturalWonderPopup.lua</File>
+    <File md5="99A4AC227275510A4E56E4DB53AEFBC7" import="1">Override/Vanilla/InGame/NaturalWonderPopup.xml</File>
+    <File md5="138D656B857A1684E5396A61F2B73CF5" import="1">Override/Vanilla/InGame/NetworkDebug.lua</File>
+    <File md5="DCB49747C300EE2D2306221239E5389B" import="1">Override/Vanilla/InGame/NetworkDebug.xml</File>
+    <File md5="4EEEA133BA5C2993DF61EB748A0B495C" import="1">Override/Vanilla/InGame/NetworkKickedPopup.lua</File>
+    <File md5="4F23A14A59061C57F1F80C898E843735" import="1">Override/Vanilla/InGame/NewEraPopup.lua</File>
+    <File md5="D7603017296119B9BA8C873658DD4C07" import="1">Override/Vanilla/InGame/NewEraPopup.xml</File>
+    <File md5="17F59F6E9D3F22C3DCEE613F5F6FC60A" import="1">Override/Vanilla/InGame/NewTurn.xml</File>
+    <File md5="C1FD5E86B05B1F488AA6C2AD9BE4E8A6" import="1">Override/Vanilla/InGame/NotificationLogPopup.lua</File>
+    <File md5="1E97E3E6C5D87B15EF1CC4C16E15A3E0" import="1">Override/Vanilla/InGame/NotificationLogPopup.xml</File>
+    <File md5="B5D37304FE656168E7872700FDE48220" import="1">Override/Vanilla/InGame/NotificationPanel.xml</File>
+    <File md5="42E291B2CA5F2AAC1F3C9E5BBF0F5A28" import="1">Override/Vanilla/InGame/PathHelpManager.lua</File>
+    <File md5="2ABBD06A786ABDB355274D41C823B831" import="1">Override/Vanilla/InGame/PathHelpManager.xml</File>
+    <File md5="0212287F5F82BD248C3FF6D7C3B41295" import="1">Override/Vanilla/InGame/PlayerChange.lua</File>
+    <File md5="55B8F092B8980F2C5455E7A911CA05CB" import="1">Override/Vanilla/InGame/PlayerChange.xml</File>
+    <File md5="D4E0F632AFE9E0FF7616243DFDF9149C" import="1">Override/Vanilla/InGame/PlotHelpManager.xml</File>
+    <File md5="94DCFBBBF6C00AB7DEE1F44B9C79C662" import="1">Override/Vanilla/InGame/PlotHelpText.xml</File>
+    <File md5="224EBEC6FF8583C828CBE33C178ED8CE" import="1">Override/Vanilla/InGame/PlotMouseoverInclude.lua</File>
+    <File md5="CFE66112A934D311C1DD4C70333BBB36" import="1">Override/Vanilla/InGame/PuppetCityPopup.lua</File>
+    <File md5="75F9BD8CF44291CC15E51686BB50C203" import="1">Override/Vanilla/InGame/Ranking.lua</File>
+    <File md5="31409679432B50752E3093435632F173" import="1">Override/Vanilla/InGame/Ranking.xml</File>
+    <File md5="6912153EF6A593FAE4E5AB54E235EFCB" import="1">Override/Vanilla/InGame/ReplayViewer.lua</File>
+    <File md5="C3D20EAB6D26122690FCF3A473A57345" import="1">Override/Vanilla/InGame/ReplayViewer.xml</File>
+    <File md5="702F5804A36BC135E37670F6E9288EE7" import="1">Override/Vanilla/InGame/ResourceIconManager.lua</File>
+    <File md5="3C1CE95F7CB70A4488F857E33B919817" import="1">Override/Vanilla/InGame/ResourceIconManager.xml</File>
+    <File md5="2E143CBEF9439DEAAD52705A6EBE0C99" import="1">Override/Vanilla/InGame/ResourceList.lua</File>
+    <File md5="625B7C6901D9123409595280E4E948F6" import="1">Override/Vanilla/InGame/ResourceList.xml</File>
+    <File md5="E6AA326D0FE7EEE53763B010A6FE6E9A" import="1">Override/Vanilla/InGame/ResourceTooltipGenerator.lua</File>
+    <File md5="9BBC14293144EE2901D3B9BF3552268A" import="1">Override/Vanilla/InGame/ReturnCivilianPopup.lua</File>
+    <File md5="2D7C5B6DEFA2E8B23E29FC493522FCA3" import="1">Override/Vanilla/InGame/SaveMapMenu.lua</File>
+    <File md5="FAB13BE0B98230F500869F782E4D5A9D" import="1">Override/Vanilla/InGame/SaveMapMenu.xml</File>
+    <File md5="94DB0CEB01F8CEAA1280025CF00F6B95" import="1">Override/Vanilla/InGame/SaveMenu.lua</File>
+    <File md5="9EB638781348A98F7A091690D27BFDF9" import="1">Override/Vanilla/InGame/SaveMenu.xml</File>
+    <File md5="1368027429A13B970090A453AB931734" import="1">Override/Vanilla/InGame/SetCityName.lua</File>
+    <File md5="D45EAE692C9522880A95AD9CFFFEE0BF" import="1">Override/Vanilla/InGame/SetCityName.xml</File>
+    <File md5="2682D21D0E02F7CBBE83D17D72C2E611" import="1">Override/Vanilla/InGame/SetUnitName.lua</File>
+    <File md5="665FB047DA0BD746C422E9B03B3120E7" import="1">Override/Vanilla/InGame/SetUnitName.xml</File>
+    <File md5="2420301444EF7DA24CE2DAEE9044BDD6" import="1">Override/Vanilla/InGame/SimpleDiploTrade.lua</File>
+    <File md5="CE6B347B2E2C5E9556F912CAA4C1C88B" import="1">Override/Vanilla/InGame/SimpleDiploTrade.xml</File>
+    <File md5="0E6CD129D6BD526147478DBC40CBA735" import="1">Override/Vanilla/InGame/SocialPolicyPopup.lua</File>
+    <File md5="0F3DF8306976044970D4765B35428F98" import="1">Override/Vanilla/InGame/SocialPolicyPopup.xml</File>
+    <File md5="C823CFFC47B6452DD9D8E220FE345FAD" import="1">Override/Vanilla/InGame/TaskList.lua</File>
+    <File md5="441687875AB71F2FB22E952391E97D58" import="1">Override/Vanilla/InGame/TaskList.xml</File>
+    <File md5="2B8E13A1A7B68E197BD4E0F3F2113E76" import="1">Override/Vanilla/InGame/TechAwardPopup.lua</File>
+    <File md5="21274C42E96EE4B9F97063A7A076971B" import="1">Override/Vanilla/InGame/TechAwardPopup.xml</File>
+    <File md5="6E447F3D53C5B5E99D0C1371A2164B6D" import="1">Override/Vanilla/InGame/TechButtonInclude.lua</File>
+    <File md5="D1ACAA5CB2FBBF0BCE07884FF90B109E" import="1">Override/Vanilla/InGame/TechHelpInclude.lua</File>
+    <File md5="8ABBA0BD28087B07780536BEB410E2EB" import="1">Override/Vanilla/InGame/TechPanel.lua</File>
+    <File md5="1AD9CAFC711C762D7B532BF95748201A" import="1">Override/Vanilla/InGame/TechPanel.xml</File>
+    <File md5="2E864F44562CA1721134CE33FC7AFBA9" import="1">Override/Vanilla/InGame/TechPanel_small.xml</File>
+    <File md5="1D32549EEBF2C24EBEE0B8EFD4720975" import="1">Override/Vanilla/InGame/TechPopup.lua</File>
+    <File md5="3BEC63C681C74631A56788058F2CF616" import="1">Override/Vanilla/InGame/TechPopup.xml</File>
+    <File md5="92EC5AC0368C738B980F97181D696D8A" import="1">Override/Vanilla/InGame/TechPopup_small.xml</File>
+    <File md5="3F73647FE0E847434A32CC8FA38CF7BB" import="1">Override/Vanilla/InGame/TechTree.lua</File>
+    <File md5="9EDB786019ED32DCD02D9BF64A3A8B3F" import="1">Override/Vanilla/InGame/TechTree.xml</File>
+    <File md5="CC282D25921C5F1E25AF7E3A5959E474" import="1">Override/Vanilla/InGame/TerrainPanel.lua</File>
+    <File md5="2073DFE2C493C0CA48AB5C7765AC1DC8" import="1">Override/Vanilla/InGame/TerrainPanel.xml</File>
+    <File md5="4809394B65D9543EB4EBA77E2ED0C74D" import="1">Override/Vanilla/InGame/TextPopup.lua</File>
+    <File md5="D9FECB5CF4DA4C507BD7E92BD92E7684" import="1">Override/Vanilla/InGame/TextPopup.xml</File>
+    <File md5="5EA0E0F5CEDAF78E04CB7F5CAB80E7BC" import="1">Override/Vanilla/InGame/TextPopup_small.xml</File>
+    <File md5="BA71C44A170FDEE0A87F0AADDC781EF7" import="1">Override/Vanilla/InGame/TurnProcessing.lua</File>
+    <File md5="7A6397F6DE772C5A0111D536D655C6D0" import="1">Override/Vanilla/InGame/TurnProcessing.xml</File>
+    <File md5="F373A6189FFFC25DC2EA7B6D686500F4" import="1">Override/Vanilla/InGame/Tutorial.xml</File>
+    <File md5="9A06D76DA194D512235D46C16FC9B1B2" import="1">Override/Vanilla/InGame/UnitList.lua</File>
+    <File md5="C779A41860B7C5770C86D8807B15E10A" import="1">Override/Vanilla/InGame/UnitList.xml</File>
+    <File md5="22B12B97AF677B2E2D561BF4186ECEE0" import="1">Override/Vanilla/InGame/UnitMemberOverlay.lua</File>
+    <File md5="7F0D0FDDAC73B3C6C63926E5CCCBCF65" import="1">Override/Vanilla/InGame/UnitMemberOverlay.xml</File>
+    <File md5="64DC0D830CCB693893C272437AC5D856" import="1">Override/Vanilla/InGame/UnitPanel.xml</File>
+    <File md5="E846CB22B70CEFD3A803150EE59A2DC2" import="1">Override/Vanilla/InGame/UnitPanel_small.xml</File>
+    <File md5="125B85A74867F958BC10DBAE89463CBE" import="1">Override/Vanilla/InGame/VictoryProgress.lua</File>
+    <File md5="0C63C10172A50DD02BE5332E28D0E8BF" import="1">Override/Vanilla/InGame/VictoryProgress.xml</File>
+    <File md5="1C21654FCB4F61A03B8D2965DC75512D" import="1">Override/Vanilla/InGame/VoteResultsPopup.lua</File>
+    <File md5="377507E59FF6819863E8BAF11AF5F749" import="1">Override/Vanilla/InGame/VoteResultsPopup.xml</File>
+    <File md5="38CBFFDCD73F13641F531831A11D839B" import="1">Override/Vanilla/InGame/WhosWinningPopup.lua</File>
+    <File md5="2588B04E3FE40FD593B87D5BB3968A73" import="1">Override/Vanilla/InGame/WhosWinningPopup.xml</File>
+    <File md5="F1D7AC582363375087C4F64455F80672" import="1">Override/Vanilla/InGame/WonderPopup.lua</File>
+    <File md5="DEF369D1CF0A043322F040681FF0AFEB" import="1">Override/Vanilla/InGame/WonderPopup.xml</File>
+    <File md5="A3743D4D2EF5B102D3D4D83F09755CFE" import="1">Override/Vanilla/InGame/WorldView.lua</File>
+    <File md5="C6C6E3A2EB23BA0AE4B4BD40212CC515" import="1">Override/Vanilla/InGame/WorldView.xml</File>
+    <File md5="41CCEBD4CAB72584C55509DBC3A9A79C" import="1">Override/Vanilla/InGame/YieldIconManager.lua</File>
+    <File md5="249988B3760129FD11C1E988FD667297" import="1">Override/Vanilla/InGame/YieldIconManager.xml</File>
+    <File md5="318107EE3C235D420A850F9B45118017" import="1">Override/XML/unitformations.xml</File>
+    <File md5="ECB28D0822786C7E88DA82554C392A9F" import="0">readme.txt</File>
+    <File md5="4D6FA789CD8AEE633F1D4C06559726BB" import="0">SQL/1- Compatibility.sql</File>
+    <File md5="70FE3A4FC956E2611774AE305D561A9F" import="0">SQL/DeleteDefaultCityState.sql</File>
+    <File md5="DF34685CE5D27D8E7513FE1F51625AB7" import="0">SQL/FinalizeRules.sql</File>
+    <File md5="2211EF492D48F96F3D5266C2CDAB35F1" import="0">SQL/NewUnitsArt.sql</File>
+    <File md5="A141D4F832CE2CEE63F7C3C0D44A1CB9" import="0">SQL/NewUnitsAssaultGuns.sql</File>
+    <File md5="DDC7485B72164BD1ACF7D7FE4F1CBC0B" import="0">SQL/NewDefaultUnits.sql</File>
+    <File md5="C57D82CD722E976B4B1F794AF5AA4664" import="0">SQL/NewRules.sql</File>
+    <File md5="BD694BF1B48340B6578E2FAFC14FEF8D" import="0">SQL/NewUnitClasses.sql</File>
+    <File md5="2EC60D3A8585B19D42611472AA330FAF" import="0">SQL/NewUnits.sql</File>
+    <File md5="4737EC6B0160A2FF2B26EE68D73E1BFF" import="0">SQL/NewUnitsBombers.sql</File>
+    <File md5="6EA04628FDD2AE86CDDC68F4EAEABE90" import="0">SQL/NewUnitsFighters.sql</File>
+    <File md5="2088DEDAD310F06FF4C23F09F76C60FB" import="0">SQL/NewUnitsInfantries.sql</File>
+    <File md5="7466C07A07ED6C5A43B6232C2C9CAAD6" import="0">SQL/NewUnitsNaval.sql</File>
+    <File md5="865F31CEA9A91E42BDA745566A5E177B" import="0">SQL/NewUnitsTanks.sql</File>
+    <File md5="4BC99FC5CDFE8F2E2E61D0C62F99AC46" import="0">SQL/ResetClassesUpgrade.sql</File>
+    <File md5="49AA79351151A70F43EBBC88E6D5D22A" import="0">SQL/ResetUnits.sql</File>
+    <File md5="F61863E0E54257A6B316E5162E3FF1FB" import="0">SQL/0- VanillaCiv5Database.sql</File>
+    <File md5="E48E78488E24F352A1AE2AC9CEE965BD" import="0">Stalingrad.Civ5Map</File>
+    <File md5="EA588008DFFB232D743F9EFD4F8D8D43" import="0">UI/FlagPromotions/OptionsScreen.lua</File>
+    <File md5="94871B1B51E15BE36D78AD4B593A56A8" import="0">UI/FlagPromotions/OptionsScreen.xml</File>
+    <File md5="3AACC4B3601B1A1C00CEB63DC58BE7CB" import="1">UI/PreLoading.lua</File>
+    <File md5="991E54E26712EDBE91872F5A18CE6347" import="1">UI/PreLoading.xml</File>
+    <File md5="A0C293A37270650C4D899B54BAE07DED" import="1">UI/ScenarioMod.lua</File>
+    <File md5="D6A071F10A3FCCA9E1CB0A20AAF42BC7" import="1">UI/ScenarioMod.xml</File>
+    <File md5="E5BC67BD1985DE6239B6A28DF2FFAB8F" import="0">UI/FlagPromotions/MiniMapPanel_addin.lua</File>
+    <File md5="761E56D02605FE225B260763A1EAF6B5" import="1">UI/FlagPromotions/MiniMapPanel_addin.xml</File>
+    <File md5="CAA2900F487D4E42B7193715F1B0DF43" import="1">UI/HotSeatLoad.lua</File>
+    <File md5="663A21A5157DB7377C3688DD9A4A4855" import="1">UI/HotSeatLoad.xml</File>
+    <File md5="F06375E9F9589DF019414DCCD69D38CA" import="1">UI/SingleLoad.lua</File>
+    <File md5="663A21A5157DB7377C3688DD9A4A4855" import="1">UI/SingleLoad.xml</File>
+    <File md5="998B68C5A818F5DAEB87973B31F413AB" import="0">World_War_II_1941.Civ5Map</File>
+    <File md5="F641FA095EAE88430DAA82859094FF51" import="0">XML/NewFeatures.xml</File>
+    <File md5="E40DD38D6A7BA9F91E08408DBB8D958F" import="0">XML/NewFontIcons.xml</File>
+    <File md5="5C9EDE4566A968E72520185D317CD45F" import="0">XML/NewBuildings.xml</File>
+    <File md5="EF23BB82D1ADCAB948E7F4A053629ED1" import="0">XML/NewCivilizations.xml</File>
+    <File md5="E87F355EBCA2732549DA77A05BE2AC59" import="0">XML/NewColors.xml</File>
+    <File md5="9CC5F94B0EEE530BE959200C57531932" import="0">XML/NewIconAtlases.xml</File>
+    <File md5="90399828E569D4118534D85093D3829F" import="0">XML/NewMinorCivs.xml</File>
+    <File md5="753A12982F891EB892F3512748295CCC" import="0">XML/NewProcesses.xml</File>
+    <File md5="F048AAF29A276AE80D7657ECC3DD6A21" import="0">XML/NewProjects.xml</File>
+    <File md5="8F58C7A64694A04B8C18F4CC5BB735ED" import="0">XML/NewPromotions.xml</File>
+    <File md5="27A8F9792839F880222C12231BBD9DD2" import="0">XML/NewRules.xml</File>
+    <File md5="55E2A9BD0109924FC5357EAD37B02FA1" import="0">XML/NewVictories.xml</File>
+    <File md5="8DF9B1DF8215F7F93B403E3793A0D5A0" import="1">XML/Scene/DiploAmerica.xml</File>
+    <File md5="4E182C34EAC580BDED7B87BB78C0A96A" import="1">XML/Scene/DiploChina.xml</File>
+    <File md5="AF092EB0F9307E9977F72DFBEE7364FF" import="1">XML/Scene/DiploFrance.xml</File>
+    <File md5="E72C276555995ACCF8C33A7ADD1F84F2" import="1">XML/Scene/DiploGermany.xml</File>
+    <File md5="5F1036199E999A7AFCB88242AC9C2A63" import="1">XML/Scene/DiploGreece.xml</File>
+    <File md5="CC0C3F7DD47045168D1391E0E7C5A9CF" import="1">XML/Scene/DiploItaly.xml</File>
+    <File md5="BBA9CA0374CD782570CFE410551DBB22" import="1">XML/Scene/DiploJapan.xml</File>
+    <File md5="643A1E80BA62976F42AF768BEDE784C0" import="1">XML/Scene/DiploUK.xml</File>
+    <File md5="97BE52FEB5EBA7FD466F2F62AD39BB01" import="1">XML/Scene/DiploUSSR.xml</File>
+    <File md5="C928E203EFBA79536D382F3E0364FD4B" import="0">XML/Texts.xml</File>
+    <File md5="ED665D913221874EE86ED19A7BD857FA" import="0">XML/TextsBuildings.xml</File>
+    <File md5="D2228B9458A9C6F26B200C9C72B89D19" import="0">XML/TextsCivilizations.xml</File>
+    <File md5="527C2BF229188E385FD7716DA4FD80E6" import="0">XML/TextsPedia.xml</File>
+    <File md5="E1829E6B804F96723DF812D96F9D81B1" import="0">XML/TextsUnits.xml</File>
+    <File md5="24A264CAE65E2C7EE5B4E44502AF4B52" import="1">_copy to common/civ5artdefines_viseffects.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>SQL/0- VanillaCiv5Database.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/1- Compatibility.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/ResetUnits.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/NewRules.sql</UpdateDatabase>
+      <UpdateDatabase>XML/NewRules.xml</UpdateDatabase>
+      <UpdateDatabase>XML/NewIconAtlases.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Texts.xml</UpdateDatabase>
+      <UpdateDatabase>XML/TextsBuildings.xml</UpdateDatabase>
+      <UpdateDatabase>XML/TextsCivilizations.xml</UpdateDatabase>
+      <UpdateDatabase>XML/TextsPedia.xml</UpdateDatabase>
+      <UpdateDatabase>XML/TextsUnits.xml</UpdateDatabase>
+      <UpdateDatabase>SQL/DeleteDefaultCityState.sql</UpdateDatabase>
+      <UpdateDatabase>XML/NewMinorCivs.xml</UpdateDatabase>
+      <UpdateDatabase>XML/NewCivilizations.xml</UpdateDatabase>
+      <UpdateDatabase>XML/NewPromotions.xml</UpdateDatabase>
+      <UpdateDatabase>SQL/NewUnitClasses.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/NewDefaultUnits.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/NewUnits.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/NewUnitsInfantries.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/NewUnitsTanks.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/NewUnitsAssaultGuns.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/NewUnitsFighters.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/NewUnitsBombers.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/NewUnitsNaval.sql</UpdateDatabase>
+      <UpdateDatabase>XML/NewColors.xml</UpdateDatabase>
+      <UpdateDatabase>XML/NewProjects.xml</UpdateDatabase>
+      <UpdateDatabase>XML/NewBuildings.xml</UpdateDatabase>
+      <UpdateDatabase>XML/NewProcesses.xml</UpdateDatabase>
+      <UpdateDatabase>XML/NewVictories.xml</UpdateDatabase>
+      <UpdateDatabase>XML/NewFeatures.xml</UpdateDatabase>
+      <UpdateDatabase>XML/NewFontIcons.xml</UpdateDatabase>
+      <UpdateDatabase>SQL/ResetClassesUpgrade.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/FinalizeRules.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/NewUnitsArt.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="Custom" file="GameSetup/RedEuro1940Setup.xml">
+      <Name>TXT_KEY_RED_EURO1940_SCENARIO_TITLE</Name>
+      <Description>TXT_KEY_RED_EURO1940_SCENARIO_DESC</Description>
+    </EntryPoint>
+    <EntryPoint type="Custom" file="GameSetup/Earth1941Setup.xml">
+      <Name>TXT_KEY_RED_EARTH1942_SCENARIO_TITLE</Name>
+      <Description>TXT_KEY_RED_EARTH1942_SCENARIO_DESC</Description>
+    </EntryPoint>
+    <EntryPoint type="Custom" file="GameSetup/RedAmericaEuro1936Setup.xml">
+      <Name>TXT_KEY_RED_AMERICAEURO1936_SCENARIO_TITLE</Name>
+      <Description>TXT_KEY_RED_AMERICAEURO1936_SCENARIO_DESC</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/ShareData.lua">
+      <Name>ShareData</Name>
+      <Description>ShareData</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/RedMain.lua">
+      <Name>REDWW2</Name>
+      <Description>ShareData</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="UI/FlagPromotions/MiniMapPanel_addin.lua">
+      <Name>MiniMapPanel_addin</Name>
+      <Description>Adds new elements to the MiniMapPanel</Description>
+    </EntryPoint>
+    <EntryPoint type="Custom" file="GameSetup/StalingradSetup.xml">
+      <Name>TXT_KEY_RED_STALINGRAD_SCENARIO_TITLE</Name>
+      <Description>TXT_KEY_RED_STALINGRAD_SCENARIO_DESC</Description>
+    </EntryPoint>
+    <EntryPoint type="Custom" file="GameSetup/Earth1936Setup.xml">
+      <Name>TXT_KEY_RED_EARTH1936_SCENARIO_TITLE</Name>
+      <Description>TXT_KEY_RED_EARTH1936_SCENARIO_DESC</Description>
+    </EntryPoint>
+    <EntryPoint type="Custom" file="GameSetup/RedSmallEuro1940Setup.xml">
+      <Name>TXT_KEY_RED_SMALL_EURO1940_SCENARIO_TITLE</Name>
+      <Description>TXT_KEY_RED_SMALL_EURO1940_SCENARIO_DESC</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="UI/FlagPromotions/OptionsScreen.lua">
+      <Name>OptionsScreen</Name>
+      <Description>Option screen for flag promotions</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>
