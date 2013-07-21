@@ -56,23 +56,33 @@ end
 
 function GetCityPersonnel(city, bUpdate) -- when bUpdate is true, variables can be updated (like number of wounded soldiers to be healed)
 	local cityPersonnel = {}
+	local bCapturedRatio = -1
+    local bDamageRatio = 0
 	local ratio = 100
 	local size = city:GetPopulation()
 	local bCaptured = city:GetOriginalOwner() ~= city:GetOwner()
 
 	cityPersonnel.fromHospital, cityPersonnel.fromPropaganda, cityPersonnel.fromRecruiting, cityPersonnel.fromNeedYou, cityPersonnel.fromFoodYield, cityPersonnel.fromTrait = 0, 0, 0, 0, 0, 0
 
-	-- get ratio from captured cities
-	if bCaptured then 
-		ratio = CAPTURED_REINFORCEMENT_PERCENT	
-		if city:IsOccupied() and not city:IsNoOccupiedUnhappiness() then
-			ratio = OCCUPIED_REINFORCEMENT_PERCENT
-		end
-		if city:IsResistance() then
-			ratio = RESISTANCE_REINFORCEMENT_PERCENT
-		end
-	end
-	cityPersonnel.ratio = ratio
+    -- get ratio from captured cities
+    if bCaptured then
+        bCapturedRatio = CAPTURED_REINFORCEMENT_PERCENT
+        if city:IsOccupied() and not city:IsNoOccupiedUnhappiness() then
+            bCapturedRatio = OCCUPIED_REINFORCEMENT_PERCENT
+        end
+        if city:IsResistance() then
+            bCapturedRatio = RESISTANCE_REINFORCEMENT_PERCENT
+        end
+        ratio = bCapturedRatio;
+    end
+
+    if city:GetDamage() > 0 then
+        bDamageRatio = (city:GetDamage() / GameDefines.MAX_CITY_HIT_POINTS) * 100;
+		ratio = ratio - bDamageRatio;
+    end
+
+    cityPersonnel.bDamageRatio = bDamageRatio
+    cityPersonnel.bCapturedRatio = bCapturedRatio
 
 	-- to do : remove (magic numbers) !
 	cityPersonnel.fromFoodYield = cityPersonnel.fromFoodYield + ((city:GetYieldRate(YieldTypes.YIELD_FOOD)/(2)) * ratio / 100)
@@ -129,32 +139,40 @@ function GetCityPersonnelTooltip(cityPersonnel)
 		strTotal = Locale.ConvertTextKey("TXT_KEY_YIELD_TOTAL_NEGATIVE", cityPersonnel.total, "[ICON_PERSONNEL]")
 	end
 	
-	-- Penalties were applied ?
-	local ratio = 100 -- normal ratio
-	if cityPersonnel.ratio ~= ratio then -- captured city
+	 -- Penalties were applied ?
+    local ratio = 100 -- normal ratio
+    if cityPersonnel.bCapturedRatio ~= -1 then -- captured city
+        local strMalusString = ""
 
-		local strMalusString = ""
+        if cityPersonnel.bCapturedRatio == OCCUPIED_REINFORCEMENT_PERCENT then
+            ratio = ratio - OCCUPIED_REINFORCEMENT_PERCENT
+            strMalusString = strMalusString .. Locale.ConvertTextKey("TXT_KEY_REINFORCEMENT_FROM_OCCUPIED", ratio) .. "[NEWLINE]";
 
-		if cityPersonnel.ratio == OCCUPIED_REINFORCEMENT_PERCENT then
-			ratio = ratio - OCCUPIED_REINFORCEMENT_PERCENT
-			strMalusString = strMalusString .. Locale.ConvertTextKey("TXT_KEY_REINFORCEMENT_FROM_OCCUPIED", ratio) .. "[NEWLINE]";
+        elseif cityPersonnel.bCapturedRatio == RESISTANCE_REINFORCEMENT_PERCENT then
+            ratio = ratio - RESISTANCE_REINFORCEMENT_PERCENT
+            strMalusString = strMalusString .. Locale.ConvertTextKey("TXT_KEY_REINFORCEMENT_FROM_RESISTANCE", ratio) .. "[NEWLINE]";
 
-		elseif cityPersonnel.ratio == RESISTANCE_REINFORCEMENT_PERCENT then
-			ratio = ratio - RESISTANCE_REINFORCEMENT_PERCENT				
-			strMalusString = strMalusString .. Locale.ConvertTextKey("TXT_KEY_REINFORCEMENT_FROM_RESISTANCE", ratio) .. "[NEWLINE]";
+        else -- captured with administrative building
+            ratio = ratio - CAPTURED_REINFORCEMENT_PERCENT
+            strMalusString = strMalusString .. Locale.ConvertTextKey("TXT_KEY_REINFORCEMENT_FROM_CAPTURED", ratio) .. "[NEWLINE]";
+        end
+        strPersonnelToolTip = strPersonnelToolTip .. "----------------[NEWLINE]" .. strMalusString;
+    end
 
-		else -- captured with administrative building	
-			ratio = ratio - CAPTURED_REINFORCEMENT_PERCENT		
-			strMalusString = strMalusString .. Locale.ConvertTextKey("TXT_KEY_REINFORCEMENT_FROM_CAPTURED", ratio) .. "[NEWLINE]";
-		end		
-		strPersonnelToolTip = strPersonnelToolTip .. "----------------[NEWLINE]" .. strMalusString;
-	end	
+    if cityPersonnel.bDamageRatio ~= 0 then -- damaged city
+        strPersonnelToolTip = strPersonnelToolTip .. Locale.ConvertTextKey("TXT_KEY_REINFORCEMENT_FROM_DAMAGE", cityPersonnel.bDamageRatio) .. "[NEWLINE]";
+    end
 	
 	strPersonnelToolTip = strPersonnelToolTip .. "----------------";
 
 	-- Build combined string
 	if (iBase ~= cityPersonnel.total) then
-		local strBase = Locale.ConvertTextKey("TXT_KEY_YIELD_BASE", iBase, "[ICON_PERSONNEL]")
+		local strBase = ""
+		if (iBase >= 0) then
+			strBase = Locale.ConvertTextKey("TXT_KEY_YIELD_BASE", iBase, "[ICON_PERSONNEL]")
+		else
+			strBase = Locale.ConvertTextKey("TXT_KEY_YIELD_BASE", "[COLOR_NEGATIVE_TEXT]" .. iBase, "[ICON_PERSONNEL]")
+		end
 		strPersonnelToolTip = strPersonnelToolTip .. "[NEWLINE]" .. strBase;
 	end
 	
@@ -251,6 +269,8 @@ end
 
 function GetCityMateriel(city, bUpdate)
 	local cityMateriel = {}
+	local bCapturedRatio = -1
+	local bDamageRatio = 0
 	local ratio = 100
 	local size = city:GetPopulation()
 	local bCaptured = city:GetOriginalOwner() ~= city:GetOwner()
@@ -260,15 +280,23 @@ function GetCityMateriel(city, bUpdate)
 
 	-- get ratio from captured cities
 	if bCaptured then 
-		ratio = CAPTURED_REINFORCEMENT_PERCENT	
+		bCapturedRatio = CAPTURED_REINFORCEMENT_PERCENT	
 		if city:IsOccupied() and not city:IsNoOccupiedUnhappiness() then
-			ratio = OCCUPIED_REINFORCEMENT_PERCENT
+			bCapturedRatio = OCCUPIED_REINFORCEMENT_PERCENT
 		end
 		if city:IsResistance() then
-			ratio = RESISTANCE_REINFORCEMENT_PERCENT
+			bCapturedRatio = RESISTANCE_REINFORCEMENT_PERCENT
 		end
+		ratio = bCapturedRatio;
+    end
+
+	if city:GetDamage() > 0 then
+		bDamageRatio = (city:GetDamage() / GameDefines.MAX_CITY_HIT_POINTS) * 100;
+		ratio = ratio - bDamageRatio;
 	end
-	cityMateriel.ratio = ratio
+
+    cityMateriel.bDamageRatio = bDamageRatio
+	cityMateriel.bCapturedRatio = bCapturedRatio
 
 	-- to do : remove (magic numbers) !	
 	cityMateriel.fromProdYield = cityMateriel.fromProdYield + ((city:GetYieldRate(YieldTypes.YIELD_PRODUCTION)/(2)) * ratio / 100)
@@ -328,16 +356,15 @@ function GetCityMaterielTooltip(cityMateriel)
 	end
 	
 	-- Penalties were applied ?
-	local ratio = 100 -- normal ratio
-	if cityMateriel.ratio ~= ratio then -- captured city
-
+    local ratio = 100 -- normal ratio
+	if cityMateriel.bCapturedRatio ~= -1 then -- captured city
 		local strMalusString = ""
 
-		if cityMateriel.ratio == OCCUPIED_REINFORCEMENT_PERCENT then
+		if cityMateriel.bCapturedRatio == OCCUPIED_REINFORCEMENT_PERCENT then
 			ratio = ratio - OCCUPIED_REINFORCEMENT_PERCENT
 			strMalusString = strMalusString .. Locale.ConvertTextKey("TXT_KEY_REINFORCEMENT_FROM_OCCUPIED", ratio) .. "[NEWLINE]";
 
-		elseif cityMateriel.ratio == RESISTANCE_REINFORCEMENT_PERCENT then
+		elseif cityMateriel.bCapturedRatio == RESISTANCE_REINFORCEMENT_PERCENT then
 			ratio = ratio - RESISTANCE_REINFORCEMENT_PERCENT				
 			strMalusString = strMalusString .. Locale.ConvertTextKey("TXT_KEY_REINFORCEMENT_FROM_RESISTANCE", ratio) .. "[NEWLINE]";
 
@@ -347,6 +374,10 @@ function GetCityMaterielTooltip(cityMateriel)
 		end		
 		strMaterielToolTip = strMaterielToolTip .. "----------------[NEWLINE]" .. strMalusString;
 	end	
+
+	if cityMateriel.bDamageRatio ~= 0 then -- damaged city
+		strMaterielToolTip = strMaterielToolTip .. Locale.ConvertTextKey("TXT_KEY_REINFORCEMENT_FROM_DAMAGE", cityMateriel.bDamageRatio) .. "[NEWLINE]";
+	end
 	
 	strMaterielToolTip = strMaterielToolTip .. "----------------";
 
