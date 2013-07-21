@@ -608,6 +608,10 @@
 		<Row Tag="TXT_KEY_REINFORCEMENT_FROM_CAPTURED">
 			<Text>(with {1_Num} % capture penalty)</Text>
 		</Row>
+		<Row Tag="TXT_KEY_REINFORCEMENT_FROM_DAMAGE">
+			<Text>(with {1_Num} % city damage penalty)</Text>
+		</Row>
+		
 
 		<Row Tag="TXT_KEY_UNIT_SUPPLY_TOOLTIP">
 			<Text>Your nation can support {1_Num} Units.[NEWLINE]Your army is composed of {2_Num} units.[NEWLINE][ICON_BULLET] Cities supply = {3_Num} units.[NEWLINE][ICON_BULLET] Population supply = {4_Num} units.[NEWLINE][ICON_BULLET] Base supply = {5_Num} units.</Text>
